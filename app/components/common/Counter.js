@@ -38,18 +38,20 @@ class Counter extends Component {
     static propTypes = {
         decrementFn: PropTypes.func.isRequired,
         incrementFn: PropTypes.func.isRequired,
+        incrementWithDelayFn:PropTypes.func.isRequired,
         children: PropTypes.number.isRequired
 
     };
 
 
     render() {
-        const {decrementFn, children, incrementFn} = this.props;
+        const {decrementFn, children, incrementFn, incrementWithDelayFn} = this.props;
         return (
             <View style={styles.container}>
                 <Button onPress={decrementFn} text="-"/>
                 <Text style={styles.label}>{children}</Text>
                 <Button onPress={incrementFn} text="+"/>
+                <Button onPress={incrementWithDelayFn} text="D+"/>
             </View>
         )
     };

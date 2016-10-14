@@ -1,6 +1,8 @@
-import Toast from 'react-native-root-toast';
+
 
 "use strict";
+
+import Toast from 'react-native-root-toast';
 
 let toast;
 

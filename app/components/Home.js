@@ -53,8 +53,7 @@ class Home extends Component {
             }
         }
 
-        let
-            routeMapper = {
+        let routeMapper = {
                 LeftButton(route, navigator, index, navState) {
                     if (index > 0) {
                         return (
